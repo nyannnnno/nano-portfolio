@@ -1,10 +1,12 @@
 import React from "react";
 
+const BASE_URL = "/nano-portfolio";
+
 const NAV_MENU = [
-    { name: "home", href: "/home" },
-    { name: "experience", href: "/project" },
-    { name: "about", href: "/about" },
-    { name: "blog", href: "/blog" },
+    { name: "home", href: `${BASE_URL}/home` },
+    { name: "experience", href: `${BASE_URL}/experience` },
+    { name: "about", href: `${BASE_URL}/about` },
+    { name: "blog", href: `${BASE_URL}/blog` },
 ];
 
 function NavItem({ children, href }) {
